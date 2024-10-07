@@ -43,71 +43,71 @@ class MainActivity : ComponentActivity() {
 @Composable
 
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-//    var text by remember { mutableStateOf("Нажмите одну из кнопок") }
-//
-//    Column(
-//        modifier = Modifier.fillMaxSize(),
-//        verticalArrangement = Arrangement.Center,
-//        horizontalAlignment = Alignment.CenterHorizontally
-//    ) {
-//        Text(text = text)
-//
-//        Spacer(modifier = Modifier.height(100.dp))
-//    }
-//
-//
-//    Row(
-//        modifier = Modifier
-//            .fillMaxWidth()
-//            .padding(16.dp),
-//        horizontalArrangement = Arrangement.Center,
-//        verticalAlignment = Alignment.CenterVertically
-//    ) {
-//        Button(onClick = {
-//            text = "Первая кнопка была нажата"
-//        }) {
-//            Text("Нажать")
-//        }
-//
-//        Spacer(modifier = Modifier.width(16.dp))
-//
-//        Button(onClick = {
-//            text = "Вторая кнопка была нажата"
-//        }) {
-//            Text("Нажать")
-//        }
-//
-//        Spacer(modifier = Modifier.width(16.dp))
-//
-//        Button(onClick = {
-//            text = "Третья кнопка была нажата"
-//        }) {
-//            Text("Нажать")
-//        }
-//    }
-//}
-    var counter by remember { mutableStateOf(1) }
+    var text by remember { mutableStateOf("Нажмите одну из кнопок") }
 
-    Column (
+    Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(
-            text = "$counter",
-            modifier = Modifier
-        )
+        Text(text = text)
 
-        Button(onClick = {
-            counter = counter + 1
-        }) {
-            Text("Нажмите на кнопку, чтобы увеличить число")
-        }
+        Spacer(modifier = Modifier.height(100.dp))
     }
 
 
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Button(onClick = {
+            text = "Первая кнопка была нажата"
+        }) {
+            Text("Нажать")
+        }
 
+        Spacer(modifier = Modifier.width(16.dp))
+
+        Button(onClick = {
+            text = "Вторая кнопка была нажата"
+        }) {
+            Text("Нажать")
+        }
+
+        Spacer(modifier = Modifier.width(16.dp))
+
+        Button(onClick = {
+            text = "Третья кнопка была нажата"
+        }) {
+            Text("Нажать")
+        }
+    }
 }
+//    var counter by remember { mutableStateOf(1) }
+//
+//    Column (
+//        modifier = Modifier.fillMaxSize(),
+//        verticalArrangement = Arrangement.Center,
+//        horizontalAlignment = Alignment.CenterHorizontally
+//    ) {
+//        Text(
+//            text = "$counter",
+//            modifier = Modifier
+//        )
+//
+//        Button(onClick = {
+//            counter = counter + 1
+//        }) {
+//            Text("Нажмите на кнопку, чтобы увеличить число")
+//        }
+//    }
+//
+//
+//
+//}
 
 @Preview(showBackground = true)
 @Composable
